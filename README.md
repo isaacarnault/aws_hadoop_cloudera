@@ -145,7 +145,7 @@ Review and Launch > Launch.<br>
 
 You'll be prompted by AWS to create a Key Pair file, create a new key pair file and Download it.<br>
 
-Save it on a repository called <b>hadoop</b>:<br>
+Save it on a repository called <b>hadoop</b>:
 
 ```r
 mkdir hadoop
@@ -155,7 +155,9 @@ Go to Services > EC2, wait for your instance to be running and for the health ch
 
 When your instance is running, select your instance name, and click "Connect".<br>
 
-Copy the provided link, e.g : ssh -i "MyKeyPairFile.pem" ubuntu@ec2-8-90-136-200.compute-1.amazonaws.com<br>
+Copy the link provided by the EC2 instance and use it in your Terminal: <br>
+
+`ssh -i "MyKeyPairFile.pem" ubuntu@ec2-*-*-*-*.compute-1.amazonaws.com`<br>
 
 Open your Terminal and go the the repository where you've stored the Key Pair file.<br>
 
