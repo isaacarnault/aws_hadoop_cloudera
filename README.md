@@ -4,10 +4,10 @@
 
 ### What you need to complete this installation
 
-#### A. Cloud platform: 1 AWS account<br>
-#### B. Tools used: 1 EC2 instance on AWS (Ubuntu 18.04 LTS)<br>
-#### C. Containerization: 1 Docker image (Cloudera Quickstart)<br>
-#### D. Programming language: Bourne Shell (bash)
+<b>A. Cloud platform: 1 AWS account</b>
+<b>B. Tools used: 1 EC2 instance on AWS (Ubuntu 18.04 LTS)</b>
+<b>C. Containerization: 1 Docker image (Cloudera Quickstart)</b>
+<b>D. Programming language: Bourne Shell (bash)</b>
 
 <hr>
 
@@ -28,7 +28,7 @@ At the end of this gist, you'll have a `Hadoop` cluster up and running for basic
 I recommend you to use a regular or enterprise version of `Cloudera` for `dev` and `prod` purposes.
 
 <hr>
-<b>Before you start<b><br>
+<b>Before you start</b><br>
 
   > Create an account on `AWS` and log into `AWS Management Console`.<br>
   Check PREREQUISITE section of this gist
