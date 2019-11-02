@@ -28,8 +28,11 @@ At the end of this gist, you'll have a `Hadoop` cluster up and running for basic
 I recommend you to use a regular or enterprise version of `Cloudera` for `dev` and `prod` purposes.
 
 <hr>
+<b>Before you start<b><br>
 
-1. Create an account on `AWS` and log into `AWS Management Console`.<br>
+  > Create an account on `AWS` and log into `AWS Management Console`.<br>
+  
+<hr>
 
 ## 1. SECURITY - Setting up our Security Group
 
