@@ -9,6 +9,8 @@
 • Containerization: 1 Docker image (Cloudera Quickstart)<br>
 • Languages: Bourne Shell (bash)
 
+<hr>
+
 Some of you asked me to make a gist that helps beginners with `Hadoop`.<br>
 
 Is `Hadoop` going to die as many claim?<br>
@@ -30,12 +32,19 @@ I recommend you to use a regular or enterprise version of `Cloudera` for `dev` a
 1. Create an account on `AWS` and log into `AWS Management Console`.<br>
 
 ## 1. SECURITY - Setting up our Security Group
+
 Bypass this step if you already have a Security Group on AWS<br>
+
 Go to Services > EC2, in NETWORK AND SECURITY, click on Security Groups > Create Security Group<br>
+
 Security group name: Hadoop<br>
+
 Description: Hadoop-Admins-SG<br>
+
 VPC: select default VPC<br>
+
 Security Group Rules (Inbound and Outbound): allow `SSH`, `HTTP`, `HTTPS` from anywhere.<br>
+
 Click on Create.
 
 <details>
@@ -118,7 +127,9 @@ At this stage you should have a user, a group and a role attached to your `AWS` 
 </details>
 
 ## 2. INSTALLATION - Setting up our EC2 instance
+
 Go to Services > EC2, click on Launch Instance.<br>
+
 Select `Ubuntu server 18.04 LTS` as AMI.
 
 <details>
@@ -155,6 +166,7 @@ Number of instances: 1 > IAM role: AdminAccess > Next: Add Storage, set storage 
 </details>
 
 Next: Add tags > Key: name, Value: hadoop-cluster > Next: Configure Security Group > select an existing security group:<br>
+
 choose the one you've created with the above commands. You can also select your default security group.<br>
 
 Review and Launch > Launch.<br>
@@ -173,7 +185,9 @@ When your instance is running, select your instance name, and click "Connect".<b
 
 Copy the link provided by the EC2 instance and use it in your Terminal: <br>
 
-`ssh -i "MyKeyPairFile.pem" ubuntu@ec2-*-*-*-*.compute-1.amazonaws.com`<br>
+```r
+ssh -i "MyKeyPairFile.pem" ubuntu@ec2-*-*-*-*.compute-1.amazonaws.com
+```
 
 Open your Terminal and go the the repository where you've stored the Key Pair file.<br>
 
