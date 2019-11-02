@@ -23,7 +23,7 @@ Security Group Rules (Inbound and Outbound): allow `SSH`, `HTTP`, `HTTPS` from a
 Click on Create.
 
 <details>
-<summary>🔴 See in Atom</summary>
+<summary>🔴 See configuration</summary>
 <p>
   
 [![isaac-arnault-AWS.png](https://i.postimg.cc/NfQcCmyB/isaac-arnault-AWS.png)](https://postimg.cc/JtYvGyc2)
@@ -36,7 +36,7 @@ Go to Services, in Security, Identity and Compliance section, click on `IAM`.<br
 Click on Users > Add user and configure as follows:
 
 <details>
-<summary>🔴 See in Atom</summary>
+<summary>🔴 See configuration</summary>
 <p>
   
 [![isaac-arnault-aws-19.png](https://i.postimg.cc/DfBjFXj2/isaac-arnault-aws-19.png)](https://postimg.cc/9zwtYrHS)
@@ -49,7 +49,7 @@ Click on Next: Permissions > Add user to group > Create group > Group Name: hado
 Search for `EC2`: select `AmazonEC2FullAccess`, Search for `IAM`: select `AmazonIAMFullAccess`
 
 <details>
-<summary>🔴 See in Atom</summary>
+<summary>🔴 See configuration</summary>
 <p>
   
 [![isaac-arnault-AWS-20.png](https://i.postimg.cc/gJBZtmsP/isaac-arnault-AWS-20.png)](https://postimg.cc/vgfTcRCP)
@@ -58,7 +58,7 @@ Search for `EC2`: select `AmazonEC2FullAccess`, Search for `IAM`: select `Amazon
 </details>
 
 <details>
-<summary>🔴 See in Atom</summary>
+<summary>🔴 See configuration</summary>
 <p>
   
 [![isaac-arnault-aws-21.png](https://i.postimg.cc/qqhC9SD6/isaac-arnault-aws-21.png)](https://postimg.cc/8fG5vKST)
@@ -69,7 +69,7 @@ Search for `EC2`: select `AmazonEC2FullAccess`, Search for `IAM`: select `Amazon
 In `IAM` go to `Roles` > Create role > click on EC2 > Next: Permissions > select AdministratorAccess
 
 <details>
-<summary>🔴 See in Atom</summary>
+<summary>🔴 See configuration</summary>
 <p>
   
 [![isaac-arnault-aws-22.png](https://i.postimg.cc/wTxvP738/isaac-arnault-aws-22.png)](https://postimg.cc/dDXwZQ84)
@@ -80,7 +80,7 @@ In `IAM` go to `Roles` > Create role > click on EC2 > Next: Permissions > select
 Key: name > Value: hadoop-cluster > Next: Review > Role name: AdminAccess > Create role. By clicking on `IAM`, you can have a summary of the role you've created.
 
 <details>
-<summary>🔴 See in Atom</summary>
+<summary>🔴 See configuration</summary>
 <p>
   
 [![isaac-arnault-AWS-23.png](https://i.postimg.cc/W1jQSk4g/isaac-arnault-AWS-23.png)](https://postimg.cc/fJ22RkmR)
@@ -93,7 +93,7 @@ At this stage you should have a user, a group and a role attached to your `AWS` 
 <br>Please note</b>: having all check marks on `IAM` green is great, but it is not mandatory by `AWS`.<br>
 
 <details>
-<summary>🔴 See in Atom</summary>
+<summary>🔴 See configuration</summary>
 <p>
   
 [![isaac-arnault-AWS-18.png](https://i.postimg.cc/N0jkjgdW/isaac-arnault-AWS-18.png)](https://postimg.cc/CR9qvVTN)
@@ -106,7 +106,7 @@ Go to Services > EC2, click on Launch Instance.<br>
 Select `Ubuntu server 18.04 LTS` as AMI.
 
 <details>
-<summary>🔴 See in Atom</summary>
+<summary>🔴 See configuration</summary>
 <p>
   
 [![isaac-arnault-AWS-hadoop.png](https://i.postimg.cc/KjqgVF52/isaac-arnault-AWS-hadoop.png)](https://postimg.cc/LgPXYc7C)
@@ -117,7 +117,7 @@ Select `Ubuntu server 18.04 LTS` as AMI.
 Choose a `t2.xlarge` instance type. Choosing a lower instance may lead to latency.
 
 <details>
-<summary>🔴 See in Atom</summary>
+<summary>🔴 See configuration</summary>
 <p>
   
 [![isaac-arnault-hadoop-2.png](https://i.postimg.cc/Sxpyh3tF/isaac-arnault-hadoop-2.png)](https://postimg.cc/6yYsVjXY)
@@ -130,7 +130,7 @@ Click on Configure Instance Details and tune as follows:<br>
 Number of instances: 1 > IAM role: AdminAccess > Next: Add Storage, set storage size to 30 Gibibytes.
 
 <details>
-<summary>🔴 See in Atom</summary>
+<summary>🔴 See configuration</summary>
 <p>
   
 [![isaac-arnault-aws-24.png](https://i.postimg.cc/9FxGN3mb/isaac-arnault-aws-24.png)](https://postimg.cc/ykZgkbS3)
@@ -207,3 +207,4 @@ You can install other applications directly from the panel and have your cluster
 ## Author
 
 * **Isaac Arnault** - Helping devs install Hadoop in a more effective way, cheaply, effortlessly and timelessly.
+
