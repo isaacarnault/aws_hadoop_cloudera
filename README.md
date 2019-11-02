@@ -4,10 +4,10 @@
 
 ### What you need to complete this installation
 
-#### Cloud platform: 1 AWS account<br>
-#### Tools used: 1 EC2 instance on AWS (Ubuntu 18.04 LTS)<br>
-#### Containerization: 1 Docker image (Cloudera Quickstart)<br>
-#### Programming language: Bourne Shell (bash)
+#### A. Cloud platform: 1 AWS account<br>
+#### B. Tools used: 1 EC2 instance on AWS (Ubuntu 18.04 LTS)<br>
+#### C. Containerization: 1 Docker image (Cloudera Quickstart)<br>
+#### D. Programming language: Bourne Shell (bash)
 
 <hr>
 
