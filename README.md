@@ -31,105 +31,11 @@ I recommend you to use a regular or enterprise version of `Cloudera` for `dev` a
 <b>Before you start<b><br>
 
   > Create an account on `AWS` and log into `AWS Management Console`.<br>
+  Check PREREQUISITE section of this gist
   
 <hr>
 
-## 1. SECURITY - Setting up our Security Group
-
-Bypass this step if you already have a Security Group on AWS<br>
-
-Go to Services > EC2, in NETWORK AND SECURITY, click on Security Groups > Create Security Group<br>
-
-Security group name: Hadoop<br>
-
-Description: Hadoop-Admins-SG<br>
-
-VPC: select default VPC<br>
-
-Security Group Rules (Inbound and Outbound): allow `SSH`, `HTTP`, `HTTPS` from anywhere.<br>
-
-Click on Create.
-
-<details>
-<summary>🔴 See configuration</summary>
-<p>
-  
-[![isaac-arnault-AWS.png](https://i.postimg.cc/NfQcCmyB/isaac-arnault-AWS.png)](https://postimg.cc/JtYvGyc2)
-
-</p>
-</details>
-
-Go to Services, in Security, Identity and Compliance section, click on `IAM`.<br>
-
-Click on Users > Add user and configure as follows:
-
-<details>
-<summary>🔴 See configuration</summary>
-<p>
-  
-[![isaac-arnault-aws-19.png](https://i.postimg.cc/DfBjFXj2/isaac-arnault-aws-19.png)](https://postimg.cc/9zwtYrHS)
-
-</p>
-</details>
-
-Click on Next: Permissions > Add user to group > Create group > Group Name: hadoop_admins<br>
-
-Search for `EC2`: select `AmazonEC2FullAccess`, Search for `IAM`: select `AmazonIAMFullAccess`
-
-<details>
-<summary>🔴 See configuration</summary>
-<p>
-  
-[![isaac-arnault-AWS-20.png](https://i.postimg.cc/gJBZtmsP/isaac-arnault-AWS-20.png)](https://postimg.cc/vgfTcRCP)
-
-</p>
-</details>
-
-<details>
-<summary>🔴 See configuration</summary>
-<p>
-  
-[![isaac-arnault-aws-21.png](https://i.postimg.cc/qqhC9SD6/isaac-arnault-aws-21.png)](https://postimg.cc/8fG5vKST)
-
-</p>
-</details>
-
-In `IAM` go to `Roles` > Create role > click on EC2 > Next: Permissions > select AdministratorAccess
-
-<details>
-<summary>🔴 See configuration</summary>
-<p>
-  
-[![isaac-arnault-aws-22.png](https://i.postimg.cc/wTxvP738/isaac-arnault-aws-22.png)](https://postimg.cc/dDXwZQ84)
-
-</p>
-</details>
-
-Key: name > Value: hadoop-cluster > Next: Review > Role name: AdminAccess > Create role. By clicking on `IAM`, you can have a summary of the role you've created.
-
-<details>
-<summary>🔴 See configuration</summary>
-<p>
-  
-[![isaac-arnault-AWS-23.png](https://i.postimg.cc/W1jQSk4g/isaac-arnault-AWS-23.png)](https://postimg.cc/fJ22RkmR)
-
-</p>
-</details>
-
-At this stage you should have a user, a group and a role attached to your `AWS` account before proceeding to step 2. <br>
-
-<br>Please note</b>: having all check marks on `IAM` green is great, but it is not mandatory by `AWS`.<br>
-
-<details>
-<summary>🔴 See configuration</summary>
-<p>
-  
-[![isaac-arnault-AWS-18.png](https://i.postimg.cc/N0jkjgdW/isaac-arnault-AWS-18.png)](https://postimg.cc/CR9qvVTN)
-
-</p>
-</details>
-
-## 2. INSTALLATION - Setting up our EC2 instance
+## INSTALLATION - Setting up our EC2 instance
 
 Go to Services > EC2, click on Launch Instance.<br>
 
