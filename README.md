@@ -20,54 +20,124 @@ Security group name: Hadoop<br>
 Description: Hadoop-Admins-SG<br>
 VPC: select default VPC<br>
 Security Group Rules (Inbound and Outbound): allow `SSH`, `HTTP`, `HTTPS` from anywhere.<br>
-Click on Create.<br>
-<hr>
+Click on Create.
+
+<details>
+<summary>🔴 See in Atom</summary>
+<p>
+  
 [![isaac-arnault-AWS.png](https://i.postimg.cc/NfQcCmyB/isaac-arnault-AWS.png)](https://postimg.cc/JtYvGyc2)
-<hr>
+
+</p>
+</details>
+
 Go to Services, in Security, Identity and Compliance section, click on `IAM`.<br>
 
 Click on Users > Add user and configure as follows:
-<hr>
+
+<details>
+<summary>🔴 See in Atom</summary>
+<p>
+  
 [![isaac-arnault-aws-19.png](https://i.postimg.cc/DfBjFXj2/isaac-arnault-aws-19.png)](https://postimg.cc/9zwtYrHS)
-<hr>
+
+</p>
+</details>
+
 Click on Next: Permissions > Add user to group > Create group > Group Name: hadoop_admins<br>
 
 Search for `EC2`: select `AmazonEC2FullAccess`, Search for `IAM`: select `AmazonIAMFullAccess`
-<hr>
+
+<details>
+<summary>🔴 See in Atom</summary>
+<p>
+  
 [![isaac-arnault-AWS-20.png](https://i.postimg.cc/gJBZtmsP/isaac-arnault-AWS-20.png)](https://postimg.cc/vgfTcRCP)
-<hr>
+
+</p>
+</details>
+
+<details>
+<summary>🔴 See in Atom</summary>
+<p>
+  
 [![isaac-arnault-aws-21.png](https://i.postimg.cc/qqhC9SD6/isaac-arnault-aws-21.png)](https://postimg.cc/8fG5vKST)
-<hr>
+
+</p>
+</details>
+
 In `IAM` go to `Roles` > Create role > click on EC2 > Next: Permissions > select AdministratorAccess
-<hr>
+
+<details>
+<summary>🔴 See in Atom</summary>
+<p>
+  
 [![isaac-arnault-aws-22.png](https://i.postimg.cc/wTxvP738/isaac-arnault-aws-22.png)](https://postimg.cc/dDXwZQ84)
-<hr>
+
+</p>
+</details>
+
 Key: name > Value: hadoop-cluster > Next: Review > Role name: AdminAccess > Create role. By clicking on `IAM`, you can have a summary of the role you've created.
-<hr>
+
+<details>
+<summary>🔴 See in Atom</summary>
+<p>
+  
 [![isaac-arnault-AWS-23.png](https://i.postimg.cc/W1jQSk4g/isaac-arnault-AWS-23.png)](https://postimg.cc/fJ22RkmR)
-<hr>
+
+</p>
+</details>
+
 At this stage you should have a user, a group and a role attached to your `AWS` account before proceeding to step 2. <br>
 
-  > <br>Please note</b>: having all check marks on `IAM` green is great, but it is not mandatory by `AWS`.<br>
-  <hr>
+<br>Please note</b>: having all check marks on `IAM` green is great, but it is not mandatory by `AWS`.<br>
+
+<details>
+<summary>🔴 See in Atom</summary>
+<p>
+  
 [![isaac-arnault-AWS-18.png](https://i.postimg.cc/N0jkjgdW/isaac-arnault-AWS-18.png)](https://postimg.cc/CR9qvVTN)
-<hr>
+
+</p>
+</details>
+
 ## 2. INSTALLATION - Setting up our EC2 instance
 Go to Services > EC2, click on Launch Instance.<br>
 Select `Ubuntu server 18.04 LTS` as AMI.
-<hr>
+
+<details>
+<summary>🔴 See in Atom</summary>
+<p>
+  
 [![isaac-arnault-AWS-hadoop.png](https://i.postimg.cc/KjqgVF52/isaac-arnault-AWS-hadoop.png)](https://postimg.cc/LgPXYc7C)
-<hr>
+
+</p>
+</details>
+
 Choose a `t2.xlarge` instance type. Choosing a lower instance may lead to latency.
-<hr>
+
+<details>
+<summary>🔴 See in Atom</summary>
+<p>
+  
 [![isaac-arnault-hadoop-2.png](https://i.postimg.cc/Sxpyh3tF/isaac-arnault-hadoop-2.png)](https://postimg.cc/6yYsVjXY)
-<hr>
+
+</p>
+</details>
+
 Click on Configure Instance Details and tune as follows:<br>
 
 Number of instances: 1 > IAM role: AdminAccess > Next: Add Storage, set storage size to 30 Gibibytes.
-<hr>
+
+<details>
+<summary>🔴 See in Atom</summary>
+<p>
+  
 [![isaac-arnault-aws-24.png](https://i.postimg.cc/9FxGN3mb/isaac-arnault-aws-24.png)](https://postimg.cc/ykZgkbS3)
-<hr>
+
+</p>
+</details>
+
 Next: Add tags > Key: name, Value: hadoop-cluster > Next: Configure Security Group > select an existing security group:<br>
 choose the one you've created with the above commands. You can also select your default security group.<br>
 
