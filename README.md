@@ -1,4 +1,4 @@
-# Deploying a Hadoop cluster for Test purposes using AWS EC2, Docker and Cloudera Quickstart
+# Deploying a Hadoop cluster for Test purposes using AWS EC2, Docker and Cloudera
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
