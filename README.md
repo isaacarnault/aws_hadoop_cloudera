@@ -1,13 +1,13 @@
 # Deploying a Hadoop cluster for Test purposes using AWS EC2, Docker and Cloudera Quickstart
 
-What you need to complete this installation: <br>
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+
+### What you need to complete this installation
 
 • Cloud platform: 1 AWS account<br>
 • Tools used: 1 EC2 instance <br>
 • Containerization: 1 Docker image (Cloudera Quickstart)<br>
 • Languages: Bourne Shell (bash)
-
-[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 Some of you asked me to make a gist that helps beginners with `Hadoop`.<br>
 
