@@ -159,17 +159,29 @@ Open your Terminal and go the the repository where you've stored the Key Pair fi
 
 Perform as follows:
 
-. chmod 400 MyKeyPairFile.pem
+```r
+chmod 400 MyKeyPairFile.pem
+```
 
 Now execute the given ssh command by your EC2 instance:
 
-. ssh -i "MyKeyPairFile.pem" ubuntu@ec2-3-90-136-245.compute-1.amazonaws.com
+```r
+ssh -i "MyKeyPairFile.pem" ubuntu@ec2-3-90-136-245.compute-1.amazonaws.com
+```
 
 You are now logged into your EC2 instance's terminal and ready to install Docker and Cloudera Quickstart.<br>
 
-. sudo apt-get remove docker docker-engine docker.io
-. curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-. sudo apt-key fingerprint 0EBFCD88
+```r
+sudo apt-get remove docker docker-engine docker.io
+```
+
+```r
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
+
+```r
+sudo apt-key fingerprint 0EBFCD88
+```
 . sudo add-apt-repository \
   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) \ stable"
 . sudo apt-get update
@@ -183,9 +195,16 @@ You are now logged into your EC2 instance's terminal and ready to install Docker
 . docker ps
 . docker pull cloudera/quickstart:latest
 . docker run -m 4G --memory-reservation 2G --memory-swap 8G --hostname=quickstart.cloudera --privileged=true -t -i -v $(pwd):/CDH --publish-all=true -p8888 -p8088 cloudera/quickstart /usr/bin/docker-quickstart
-<hr>
+
+<details>
+<summary>🔴 See configuration</summary>
+<p>
+  
 [![isaac-arnault-AWS-24.png](https://i.postimg.cc/bvp5PDS8/isaac-arnault-AWS-24.png)](https://postimg.cc/xXp5ydPF)
-<hr>
+
+</p>
+</details>
+
 If all services are launched on your EC2 Terminal, open your web browser and type the following :
 
 `my-EC2-instance-DNS:32768`
@@ -193,13 +212,27 @@ If all services are launched on your EC2 Terminal, open your web browser and typ
 You should land to the login form, use `cloudera / cloudera` as login and password.
 
 Here you go! You can now start using `Hadoop` for testing purposes.
-<hr>
+
+<details>
+<summary>🔴 See configuration</summary>
+<p>
+  
 [![isaac-arnault-AWS-cloudera.png](https://i.postimg.cc/dQhZ65NP/isaac-arnault-AWS-cloudera.png)](https://postimg.cc/WtP4bwPX)
-<hr>
+
+</p>
+</details>
+
 `my-EC2-instance-DNS:32769` for cluster overview
-<hr>
+
+<details>
+<summary>🔴 See configuration</summary>
+<p>
+  
 [![isaac-arnault-hadoop-cloudera.png](https://i.postimg.cc/BQNpFYjW/isaac-arnault-hadoop-cloudera.png)](https://postimg.cc/dLkGP9Rn)
-<hr>
+
+</p>
+</details>
+
 You can install other applications directly from the panel and have your cluster ready for action!
 <hr>
 [![isaac-arnault-cloudera-CDH.png](https://i.postimg.cc/FF6sKmxw/isaac-arnault-cloudera-CDH.png)](https://postimg.cc/DmqKC9Hc)
