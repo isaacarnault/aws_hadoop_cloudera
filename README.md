@@ -34,7 +34,7 @@ I recommend you to use a regular or enterprise version of `Cloudera` for `dev` a
 <b>Before you start</b><br>
 
   > Create an account on `AWS` and log into `AWS Management Console`.<br>
-  Check PREREQUISITE section of this gist
+  Check PREREQUISITES section of this gist
   
 <hr>
 
