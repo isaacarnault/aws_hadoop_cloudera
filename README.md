@@ -1,16 +1,32 @@
 # Deploying a Hadoop cluster for Test purposes using AWS EC2, Docker and Cloudera Quickstart
 
-[![Project Status: Concept – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept)
+What you need to complete this installation: <br>
 
-Some of you asked me to make a gist that helps beginners with `Hadoop`.
+• Cloud platform: 1 AWS account<br>
+• Tools used: 1 EC2 instance <br>
+• Containerization: 1 Docker image (Cloudera Quickstart)<br>
+• Languages: Bourne Shell (bash)
+
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+
+Some of you asked me to make a gist that helps beginners with `Hadoop`.<br>
+
 Is `Hadoop` going to die as many claim?<br>
-If yes, then let's run a `Hadoop` cluster before it's too late :)!
-<br>
+
+If yes, then let's run a `Hadoop` cluster before it's too late :)!<br> 
+
 This gist will help you launch a `Hadoop` cluster easily.<br>
-We'll be using `AWS` as `Compute` and `Storage` platform. We'll also use `Docker` in order to launch `Cloudera QuickStart`.<br>
-At the end of this gist, you'll have a `Hadoop` cluster up and running for basic purposes. I recommend you to use a regular or enterprise version of `Cloudera` for `dev` and `prod` purposes.
+
+We'll be using `AWS` as `Compute` and `Storage` platform. <br>
+
+We'll also use `Docker` in order to launch `Cloudera QuickStart`.<br>
+
+At the end of this gist, you'll have a `Hadoop` cluster up and running for basic purposes. <br>
+
+I recommend you to use a regular or enterprise version of `Cloudera` for `dev` and `prod` purposes.
 
 <hr>
+
 1. Create an account on `AWS` and log into `AWS Management Console`.<br>
 
 ## 1. SECURITY - Setting up our Security Group
