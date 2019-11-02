@@ -147,7 +147,9 @@ You'll be prompted by AWS to create a Key Pair file, create a new key pair file 
 
 Save it on a repository called <b>hadoop</b>:<br>
 
-. mkdir hadoop
+```r
+mkdir hadoop
+```
 
 Go to Services > EC2, wait for your instance to be running and for the health checks to pass.<br>
 
@@ -182,19 +184,55 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```r
 sudo apt-key fingerprint 0EBFCD88
 ```
-. sudo add-apt-repository \
+
+```r
+sudo add-apt-repository \
   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) \ stable"
-. sudo apt-get update
-. apt-cache madison docker-ce
-. sudo apt install docker.io
-. sudo systemctl start docker
-. sudo systemctl enable docker
-. docker --version
-. sudo su
-. docker images
-. docker ps
-. docker pull cloudera/quickstart:latest
-. docker run -m 4G --memory-reservation 2G --memory-swap 8G --hostname=quickstart.cloudera --privileged=true -t -i -v $(pwd):/CDH --publish-all=true -p8888 -p8088 cloudera/quickstart /usr/bin/docker-quickstart
+```
+
+```r
+sudo apt-get update
+```
+
+```r
+apt-cache madison docker-ce
+```
+
+```r
+sudo apt install docker.io
+```
+
+```r
+sudo systemctl start docker
+```
+
+```r
+sudo systemctl enable docker
+```
+
+```r
+docker --version
+```
+
+```r
+sudo su
+```
+
+```r
+docker images
+```
+
+```r
+docker ps
+```
+
+```r
+docker pull cloudera/quickstart:latest
+```
+
+```r
+docker run -m 4G --memory-reservation 2G --memory-swap 8G --hostname=quickstart.cloudera --privileged=true -t -i -v $(pwd):/CDH --publish-all=true -p8888 -p8088 cloudera/quickstart /usr/bin/docker-quickstart
+```
 
 <details>
 <summary>🔴 See configuration</summary>
@@ -234,9 +272,13 @@ Here you go! You can now start using `Hadoop` for testing purposes.
 </details>
 
 You can install other applications directly from the panel and have your cluster ready for action!
+
 <hr>
+
 [![isaac-arnault-cloudera-CDH.png](https://i.postimg.cc/FF6sKmxw/isaac-arnault-cloudera-CDH.png)](https://postimg.cc/DmqKC9Hc)
+
 <hr>
+
 ## Author
 
 * **Isaac Arnault** - Helping devs install Hadoop in a more effective way, cheaply, effortlessly and timelessly.
