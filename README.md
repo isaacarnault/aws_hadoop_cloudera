@@ -235,7 +235,7 @@ docker run -m 4G --memory-reservation 2G --memory-swap 8G --hostname=quickstart.
 ```
 
 <details>
-<summary>🔴 See configuration</summary>
+<summary>🔵 See output</summary>
 <p>
   
 [![isaac-arnault-AWS-24.png](https://i.postimg.cc/bvp5PDS8/isaac-arnault-AWS-24.png)](https://postimg.cc/xXp5ydPF)
@@ -252,7 +252,7 @@ You should land to the login form, use `cloudera / cloudera` as login and passwo
 Here you go! You can now start using `Hadoop` for testing purposes.
 
 <details>
-<summary>🔴 See configuration</summary>
+<summary>🔵 See output</summary>
 <p>
   
 [![isaac-arnault-AWS-cloudera.png](https://i.postimg.cc/dQhZ65NP/isaac-arnault-AWS-cloudera.png)](https://postimg.cc/WtP4bwPX)
@@ -263,7 +263,7 @@ Here you go! You can now start using `Hadoop` for testing purposes.
 `my-EC2-instance-DNS:32769` for cluster overview
 
 <details>
-<summary>🔴 See configuration</summary>
+<summary>🔵 See output</summary>
 <p>
   
 [![isaac-arnault-hadoop-cloudera.png](https://i.postimg.cc/BQNpFYjW/isaac-arnault-hadoop-cloudera.png)](https://postimg.cc/dLkGP9Rn)
@@ -282,4 +282,3 @@ You can install other applications directly from the panel and have your cluster
 ## Author
 
 * **Isaac Arnault** - Helping devs install Hadoop in a more effective way, cheaply, effortlessly and timelessly.
-
